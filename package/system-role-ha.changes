@@ -3,4 +3,4 @@ Wed Feb 28 13:54:13 CET 2018 - aginies@suse.com
 
 - first release for HA system role
 - FATE#324757: system-role for HA and GEO cluster
-- version 15.0.1
+- version 15.0.2
