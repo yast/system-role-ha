@@ -30,6 +30,7 @@ textdomain="control"
         		  <enable_firewall config:type="boolean">false</enable_firewall>
         		  <enable_sshd config:type="boolean">true</enable_sshd>
         		  <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
+                  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
         		</globals>
                 <partitioning>
                   <try_separate_home config:type="boolean">false</try_separate_home>
@@ -38,7 +39,6 @@ textdomain="control"
                   <default_patterns>minimal_base ha_sles</default_patterns>
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
                 </software>
-                <default_ntp_setup config:type="boolean">true</default_ntp_setup>
               </system_role>
             </system_roles>
           </insert_system_role>
@@ -68,6 +68,7 @@ textdomain="control"
         		  <enable_firewall config:type="boolean">false</enable_firewall>
         		  <enable_sshd config:type="boolean">true</enable_sshd>
         		  <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
+                  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
         		</globals>
                 <partitioning>
                   <try_separate_home config:type="boolean">false</try_separate_home>
@@ -76,7 +77,6 @@ textdomain="control"
                   <default_patterns>minimal_base ha_geo</default_patterns>
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
                 </software>
-                <default_ntp_setup config:type="boolean">true</default_ntp_setup>
               </system_role>
             </system_roles>
           </insert_system_role>
