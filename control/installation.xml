@@ -16,39 +16,9 @@ textdomain="control"
           <label>• HA pattern installed
 • sshd / NTP enable</label>
       </ha_role_description>
-    </texts>
-    <update>
-      <system_roles>
-        <insert_system_roles config:type="list">
-          <insert_system_role>
-            <!-- FATE#317481 -->
-            <system_roles config:type="list">
-              <system_role>
-                <id>ha_role</id>
-		        <order config:type="integer">5000</order>
-        		<globals>
-        		  <enable_firewall config:type="boolean">false</enable_firewall>
-        		  <enable_sshd config:type="boolean">true</enable_sshd>
-        		  <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
-                  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
-        		</globals>
-                <partitioning>
-                  <try_separate_home config:type="boolean">false</try_separate_home>
-                </partitioning>
-                <software>
-                  <default_patterns>minimal_base ha_sles</default_patterns>
-                  <optional_default_patterns><![CDATA[]]></optional_default_patterns>
-                </software>
-              </system_role>
-            </system_roles>
-          </insert_system_role>
-        </insert_system_roles>
-      </system_roles>
-    </update>
-    <texts>
       <geo_role>
         <!-- TRANSLATORS: a label for a system role -->
-        <label>HA node</label>
+        <label>HA GEO node</label>
       </geo_role>
       <geo_role_description>
         <label>• HA GEO pattern installed
@@ -62,19 +32,36 @@ textdomain="control"
             <!-- FATE#317481 -->
             <system_roles config:type="list">
               <system_role>
-                <id>geo_role</id>
-		        <order config:type="integer">6000</order>
-        		<globals>
-        		  <enable_firewall config:type="boolean">false</enable_firewall>
-        		  <enable_sshd config:type="boolean">true</enable_sshd>
-        		  <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
-                  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
-        		</globals>
+                <id>ha_role</id>
+		<order config:type="integer">5000</order>
+		<globals>
+		  <enable_firewall config:type="boolean">true</enable_firewall>
+		  <enable_sshd config:type="boolean">true</enable_sshd>
+		  <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
+		  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
+		</globals>
                 <partitioning>
                   <try_separate_home config:type="boolean">false</try_separate_home>
                 </partitioning>
                 <software>
-                  <default_patterns>minimal_base ha_geo</default_patterns>
+                  <default_patterns>minimal_base ha_sles</default_patterns>
+                  <optional_default_patterns><![CDATA[]]></optional_default_patterns>
+                </software>
+              </system_role>
+              <system_role>
+                <id>geo_role</id>
+		<order config:type="integer">6000</order>
+		<globals>
+		  <enable_firewall config:type="boolean">true</enable_firewall>
+		  <enable_sshd config:type="boolean">true</enable_sshd>
+		  <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
+		  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
+		</globals>
+		<partitioning>
+                  <try_separate_home config:type="boolean">false</try_separate_home>
+                </partitioning>
+                <software>
+                  <default_patterns>minimal_base ha_sles ha_geo</default_patterns>
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
                 </software>
               </system_role>
