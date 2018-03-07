@@ -6,7 +6,8 @@ Thu Mar  1 09:38:54 CET 2018 - aginies@suse.com
 - fix HA GEO node
 - Add ha_sles pattern installation in HA GEO node system role
 - BSC#1083449
-- version 15.0.3
+- version 15.0.4
+- change order number to get this on top of system role layout
 
 -------------------------------------------------------------------
 Wed Feb 28 13:54:13 CET 2018 - aginies@suse.com
