@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Mar 13 16:37:02 CET 2018 - aginies@suse.com
+
+- FATE#324757: 
+    - install the patterns enhanced_base
+    - firewall: the ssh port should be open
+
+-------------------------------------------------------------------
 Thu Mar  1 09:38:54 CET 2018 - aginies@suse.com
 
 - enable_firewall should be true
