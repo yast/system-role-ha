@@ -40,9 +40,6 @@ textdomain="control"
 		  <firewall_enable_ssh config:type="boolean">true</firewall_enable_ssh>
 		  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
 		</globals>
-                <partitioning>
-                  <try_separate_home config:type="boolean">false</try_separate_home>
-                </partitioning>
                 <software>
                   <default_patterns>minimal_base ha_sles enhanced_base</default_patterns>
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
@@ -57,9 +54,6 @@ textdomain="control"
 		  <firewall_enable_ssh config:type="boolean">true</firewall_enable_ssh>
 		  <default_ntp_setup config:type="boolean">true</default_ntp_setup>
 		</globals>
-		<partitioning>
-                  <try_separate_home config:type="boolean">false</try_separate_home>
-                </partitioning>
                 <software>
                   <default_patterns>minimal_base ha_sles ha_geo enhanced_base</default_patterns>
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
