@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Wed Apr 06 13:24:58 UTC 2022 - Ladislav Slezák <lslezak@suse.cz>
+
+- Bump version to 15.5.0 (#bsc1198109)
+
+-------------------------------------------------------------------
 Mon Nov 15 15:52:38 UTC 2021 - José Iván López González <jlopez@suse.com>
 
 - Remove partitioning section. That setting were useless because
